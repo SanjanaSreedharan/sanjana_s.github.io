@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for the About section */
+    #about img {
+      width: 200px;
+      height: 200px;
+    }
+ 
+  
+/* Custom styles for the Skills section */
+#skills .card {
+  width: 100%;
+  margin: auto;
+}
+
+#skills .card img {
+  height: 150px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  #skills .card {
+    margin: 0 15px;
+  }
+}
+
+/* Custom styles for the Contact Me section */
+.bg-pink {
+  background-color: #f7f2f6;
+}
+.btn-pink {
+  background-color: #f7f2f6;
+  border: none;
+}
+.btn-pink:hover {
+  background-color: #ff1493;
+}
+
+/* Ensure the body has top padding to prevent content from being hidden behind the fixed navbar */
+body {
+  padding-top: 56px;
+}
+/* Additional custom styles for the navigation bar */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+
+</style>
+
+</head>
+<body>
+  <!-- Other sections of your website -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class="display-4 mb-4">About</h2>
+      <div class="d-flex justify-content-center">
+        <img src="images/about/1.jpg" class="rounded-circle border border-dark mb-4" alt="Profile Image">
+      </div>
+      <div class="col-md-8 mx-auto">
+        <p class="lead mb-4">Hey! It's Sanjana, an aspiring Data Analyst. I have developed a strong foundation in the tools and languages required for data analysis and a passion for using data to uncover meaningful insights..</p>
+        <p class="lead"> I enjoy exploring new data analysis tools and techniques, and I am always looking for opportunities to expand my knowledge and skills. Here I mentioned my projects to showcase my skills and expertise in data analysis.I am excited to bring my technical and analytical skills to the field of data analytics as an entry-level data specialist. </p>
+      </div>
+    </div>
+  </section>
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+  <div class="container text-center">
+    <h2 class="display-4 mb-4">Projects</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Covid_19 Data Analysis</h5>
+            <p class="card-text">Using python and it's libraries cleaned the Covid 19 datasets based in india. And came into conclusion about the most and least affected states and vaccination rates.</p>
+            
+            <a href="https://github.com/SanjanaSreedharan/sanjana_s.github.io/tree/main/Covid19_Data_%20Analysis" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/2.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">YouTube Statistics Analysis</h5>
+            <p class="card-text"> Analyzed the latest YouTube Statistics using kaggle data set with SQL. With the help of the dataset, explored fascinating insights about top countries& continents with highest earning, popular channels, and other KPIs.</p>
+            
+            <a href="https://github.com/SanjanaSreedharan/sanjana_s.github.io/tree/main/Youtube%20Statistics" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Bank Loan Analysis</h5>
+            <p class="card-text">Collecting data from Bank Database,Clean data and analyze good and bad loans also factors correlated with Loan Application and visualized them .</p>
+            
+            <a href="https://github.com/SanjanaSreedharan/sanjana_s.github.io/tree/main/Bank%20Loan%20DashBoard" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+  <div class="container text-center">
+    <h2 class="display-4 mb-4">Skills</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="images/skills/1.jpg" class="card-img-top" alt="Skill 1">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Python and important libraries for Data Analysis like Pandas,Numpy,matplotlib etc.</p>
+            <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="images/skills/2.png" class="card-img-top" alt="Skill 2">
+          <div class="card-body">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">Visualization using Power BI and DAX commands</p>
+            <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="images/skills/3.png" class="card-img-top" alt="Skill 3">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">SQL and and RDBMS like MS Sql server, Mysql etc</p>
+            <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="images/skills/4.jpg" class="card-img-top" alt="Skill 4">
+          <div class="card-body">
+            <h5 class="card-title">MS Excel</h5>
+            <p class="card-text">Excel functions, Formula, Pivot Table, VLOOKUP, HLOOKUP</p>
+            <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Me Section -->
+<section id="contact" class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="display-4 mb-4">Contact Me</h2>
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-4 mb-3">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="icons/mail.jpg" class="rounded-circle bg-pink p-2 mr-3" alt="Email Icon" style="width: 40px; height: 40px;">
+          <p class="mb-0">sanjanasreedharan104@gmail.com</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="icons/phone.png" class="rounded-circle bg-pink p-2 mr-3" alt="Phone Icon" style="width: 40px; height: 40px;">
+          <p class="mb-0">+91 7510912980</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-auto mb-3">
+        <a href="https://www.linkedin.com" class="btn btn-pink rounded-circle p-2" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+          <img src="icons/linkedin.png" alt="LinkedIn" style="width: 40px; height: 40px;">
+        </a>
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a.nav-link").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+  <!-- Other sections of your website -->
+</body>
+</html>
+
+
